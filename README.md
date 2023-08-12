@@ -165,6 +165,8 @@ If you like this project please provide a ⭐️ to the [project github repo](ht
 
 I would like to thank the Microverse community
 
+[Original design](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=) idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella).
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LICENSE -->
