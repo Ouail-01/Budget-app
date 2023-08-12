@@ -29,6 +29,11 @@
 
 **Budget-App** The "Budget App," is a dynamic and user-friendly web application designed to empower individuals to take control of their finances. With a focus on effective budget management, this project offers a seamless platform for users to track, categorize, and analyze their transactions, providing valuable insights into their spending patterns.
 
+
+<!-- LIVE DEMO -->
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo](https://budgetapp-7kxz.onrender.com/home)
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -164,6 +169,8 @@ If you like this project please provide a ⭐️ to the [project github repo](ht
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank the Microverse community
+
+[Original design](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=) idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
