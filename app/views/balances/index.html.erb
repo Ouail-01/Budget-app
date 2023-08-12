@@ -1,0 +1,31 @@
+<section>
+  <div>
+    menu
+    <h1>TRANSACTIONS</h1>
+    search 
+  </div>
+
+  <div>
+    <ul>
+      <% @balances.each do |balance| %>
+      <%= link_to "/balances/#{balance.id}" do %>
+          <li> 
+          <img src=<%= balance.icon %> alt=<%= balance.name %> >
+          <div>
+            <p><%= balance.name.capitalize %> <p>
+            <p><%= balance.created_at.strftime('%d-%b-%Y') %> <p>
+          </div>
+          <p>$<%= balance.total_amount %></p>
+          </li>
+      <%end%>
+      <% end %>
+    </ul>
+  </div>
+
+  <div>
+    <span>
+      <%= link_to '+', new_balance_path %>
+    </span>
+  </div>
+
+</section>
