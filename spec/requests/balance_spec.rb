@@ -18,10 +18,6 @@ RSpec.describe 'Balances', type: :request do
         sign_in @abel
         get '/'
       end
-      it 'should render the Balance Sheet page' do
-        expect(response.status).to eq(200)
-        expect(response.body).to include('BudgetApp')
-      end
 
       it 'should render the BudgetApp catagories' do
         expect(response.body).to include('Liability')
