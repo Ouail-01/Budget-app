@@ -1,0 +1,75 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  background: rgb(237, 237, 237);
+}
+
+.home-page h1 {
+  color: #434b54;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  font-size: 30px;
+}
+
+.home-page .links {
+  flex-direction: column;
+  margin-top: auto;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.home-page span {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  cursor: pointer;
+}
+
+.home-page a {
+  text-decoration: none;
+  color: #434b54d3;
+  width: 100%;
+  padding: 15px;
+}
+
+.home-page span:nth-child(1) {
+  background: #3778c2;
+  border-radius: 5px;
+}
+
+.home-page span:nth-child(1) a {
+  color: #fff;
+}

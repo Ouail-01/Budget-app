@@ -1,0 +1,28 @@
+<section class="login">
+  
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="nav flex">
+    <a class="back" href="<%= root_path %>">
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 1024 1024"><path fill="currentColor" d="M224 480h640a32 32 0 1 1 0 64H224a32 32 0 0 1 0-64z"/><path fill="currentColor" d="m237.248 512l265.408 265.344a32 32 0 0 1-45.312 45.312l-288-288a32 32 0 0 1 0-45.312l288-288a32 32 0 1 1 45.312 45.312L237.248 512z"/></svg>
+    </a>
+    <h2>LOGIN</h2>
+    <div class="actions">
+      <%= f.submit "Log in", class: "login-button" %>
+    </div>
+  </div>
+  
+  <div class="field">
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", class: "fields" %>
+  </div>
+
+  <div class="field">
+    <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password", class: "fields" %>
+  </div>
+
+  <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+    <%= link_to "Forgot password?", new_password_path(resource_name), class: "flex password" %><br />
+  <% end %>
+  
+<% end %>
+
+</section>
