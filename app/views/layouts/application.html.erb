@@ -11,6 +11,15 @@
   </head>
 
   <body>
+    <nav class="navbar">
+      <% if user_signed_in? %>
+        <ul>
+          <li>
+            <%= button_to "Log out", '/users/sign_out', method: :delete, data: { turbo: false } %> 
+          </li>
+        </ul>
+      <% end %>
+    </nav>
 
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
