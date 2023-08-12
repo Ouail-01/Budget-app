@@ -1,0 +1,50 @@
+.new-transaction {
+  background: rgb(237, 237, 237);
+  min-height: 100vh;
+}
+
+.new-transaction .nav {
+  justify-content: space-between;
+  background: #3778c2;
+  color: #fff;
+  margin-bottom: 30px;
+  width: 100%;
+  min-height: 70px;
+}
+
+.back {
+  color: white;
+  text-decoration: none;
+}
+
+.item-form {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.new-transaction .item-form input[type="text"],
+.new-transaction .item-form input[type="number"] {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.new-transaction .transactions {
+  margin-top: 20px;
+}
+
+.transaction-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.new-transaction .submit-button {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
