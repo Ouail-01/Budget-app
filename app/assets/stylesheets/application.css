@@ -31,6 +31,7 @@
   align-items: center;
   justify-content: space-between;
   height: 100vh;
+  background: rgb(237, 237, 237);
 }
 
 .home-page h1 {
