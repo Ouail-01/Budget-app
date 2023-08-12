@@ -1,0 +1,39 @@
+<section>
+  <div>
+    <div>
+      <%= link_to 'back', root_path %>
+      <h1>DETAILS</h1>
+      <p></p>
+    </div>
+  </div>
+
+  <div>
+    <div>
+      <div>
+        <img src=<%= @balance.icon %> alt=<%= @balance.name%> >
+        <p> <%= @balance.name.capitalize%></p>
+        </div>
+        <% total= 0%>
+          <% @balance.items.each do |item| %>
+            <div>
+              <div>
+                <p><%= item.name %></p>
+                <p>$<%= item.amount %></p>
+              </div>
+              <p><%= item.created_at.strftime('%d-%b-%Y') %> <p>
+            </div>
+            <% total += item.amount%>
+            <% end %>
+            <div>
+              <p>TOTAL PAYMENT</p>
+              <p>$<%= total%></p>
+            </div>
+    </div>
+  </div>
+  
+  <div>
+    <span>
+      <%= link_to 'add', new_balance_item_path(@balance.id) %>
+    </span>
+  </div>
+</section>
