@@ -1,0 +1,29 @@
+<section>
+  <div>
+    <%= link_to 'back', root_path %>
+    <h1>NEW TRANSACTIONS</h1>
+    search
+  </div>    
+
+  <div>
+    <% if @balance.errors.any? %>
+    <div>
+      <p><%= pluralize(@balance.errors.count, "error") %> found:</p>
+      <ul>
+        <% @balance.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+    <% end %>
+  <div>
+
+  <%= form_with model: @balance, url: balances_path,  method: :post do | form |%>
+  <div>
+    <%= form.text_field :name, placeholder: 'Name', required: true%>
+    <%= form.text_field :icon, placeholder: 'icon URL', required: true %>
+    <span><%= form.submit 'Save'%></span>
+  </div>
+  <% end %>
+
+</section>
