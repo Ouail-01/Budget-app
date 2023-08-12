@@ -34,6 +34,11 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo](https://budgetapp-7kxz.onrender.com/home)
+
+## 📺 Presentation
+
+- [Video Presentation](https://www.loom.com/share/4b8fbba47e7e44d08147ea72f58009bc)
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
